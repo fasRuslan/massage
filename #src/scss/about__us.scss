@@ -1,0 +1,46 @@
+.description-studio{
+	padding: 2% 2% 2% 2%;
+	background-color: #1F1F1F;
+	color: white;
+	&--flex{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.description-studio__title {
+	font-family: 'Cormorant Garamond', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: $h2-fontSize;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 5%;
+	}
+	.description-studio__content {
+		&--flex{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.description-studio__text {
+			width: 35%;
+		}
+		.description-studio__text-title {
+			font-family: 'Roboto',sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			margin-bottom: 13%;
+		}
+		.description-studio__text-subtitle {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 130%;
+		color: #E1E1E1;
+		}
+		.description-studio__video {
+		}
+	}
+}
