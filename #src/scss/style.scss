@@ -357,26 +357,27 @@ $h2-fontSize: 30px;
 		width: 90%;
 		height: 400px;
 		margin: 0 10px;
+		background-color: white;
 	}
 	.reviews__img{
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: contain;
 
 		&--first{
 			background-image: url( '../img/rewiews/1.jpg');
 		}
 		&--second{
-			background-image: url( '../img/rewiews/1.jpg');
+			background-image: url( '../img/rewiews/2.jpg');
 		}
 		&--third{
-			background-image: url( '../img/rewiews/1.jpg');
+			background-image: url( '../img/rewiews/3.jpg');
 		}
 		&--fourth{
-			background-image: url( '../img/rewiews/1.jpg');
+			background-image: url( '../img/rewiews/4.jpg');
 		}
 		&--fifth{
-			background-image: url( '../img/rewiews/1.jpg');
+			background-image: url( '../img/rewiews/5.jpg');
 		}
 	}
 }
@@ -527,3 +528,39 @@ $h2-fontSize: 30px;
 }
 @import "popup.scss";
 @import "certificate__popup.scss";
+.form-services{
+	padding: 2% 2% 2% 2%;
+	background-color: white;
+	.form-services__title{
+		font-size: 24px;
+		font-weight: bold;
+		margin-bottom: 4%;
+	}
+	.form-name{
+		padding: 10px 20px;
+		font-size: 24px;
+	}
+	.form-phone{
+		padding: 10px 20px;
+		font-size: 24px;
+	}
+	.form__item {
+	}
+	.form__item--btn {
+	}
+	.form-services__btn{
+		margin-top: 5%;
+		padding: 15px 20px;
+		font-size: 18px;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: #242424;
+		display: block;
+		margin: 0 auto;
+		color: white;
+		-webkit-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		transition: all 1s ease;
+		cursor: pointer;
+		}
+}

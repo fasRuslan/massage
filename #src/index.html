@@ -13,6 +13,7 @@
 </head>
 
 <body>
+	@@include("_preloader.html")
 	@@include("_header.html")
 	<section class="services" id="services">
 		<div class="wrapper">
@@ -27,7 +28,7 @@
 					<p class="services-card__price">
 						Цена от 2400/3100
 					</p>
-					<a href="" class="services-card__link">
+					<a href="#services__popup-services" class="services-card__link popup__link js__services-card">
 						Записаться
 					</a>
 				</li>
@@ -175,7 +176,7 @@
 					</a>
 				</li>
 				<li class="services__item services-card">
-					<img src="img/card/12.png" alt="" class="services-card__photo">
+					<img src="img/card/13.png" alt="" class="services-card__photo">
 					<h3 class="services-card__title">Массаж стоп <br>(Общеукрепляющий)</h3>
 					<p class="services-card__subtitel">
 						Продолжительность сеанса: 60/90 мин
@@ -324,6 +325,8 @@
 	@@include("_footer.html")
 	@@include("_popup.html")
 	@@include("_certificate__popup.html")
+	@@include("_card__popup.html")
+	@@include("_services__popup.html")
 
 	<script src="js/script.min.js"></script>
 </body>
