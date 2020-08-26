@@ -60,7 +60,7 @@ function html() {
 	return src(path.src.html)
 		.pipe(fileinclude()) //Для сборки файла
 		// .pipe(webphtml()) ошибка с плагином
-		.pipe(htmlmin({ collapseWhitespace: true }))
+		// .pipe(htmlmin({ collapseWhitespace: true }))
 		.pipe(dest(path.build.html))
 		.pipe(browsersync.stream())
 }
