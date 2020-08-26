@@ -1,0 +1,89 @@
+.sertificate__carusel{
+    background-color:#1F1F1F;
+    padding: 60px 2%;
+
+  @media screen and (max-width: $tablet){
+    padding: 60px 40px;
+  }
+
+  @media screen and (max-width: $mobile){
+    padding: 40px 15px;
+  }
+
+    .sertificate__carusel-title{
+        font-family: Cormorant Garamond;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: uppercase;
+        text-align: center;
+
+color: #FFFFFF;
+    }
+}
+
+
+.example-desc {
+    margin:3px 0;
+    padding:5px;
+}
+
+#carousel {
+    width:960px;
+    margin: 0 auto;
+    height: 500px;
+    position:relative;
+    clear:both;
+    overflow:hidden;
+}
+#carousel img {
+    visibility:hidden; /* hide images until carousel can handle them */
+    cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+}
+
+.split-left {
+    width:450px;
+    float:left;
+}
+.split-right {
+    width:400px;
+    float:left;
+    margin-left:10px;
+}
+#callback-output {
+    height:250px;
+    overflow:scroll;
+}
+textarea#newoptions {
+    width:430px;
+}
+.nav {
+    // // width: 80px;
+    // margin: 20px auto
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    .carusel__button{
+        color: white;
+        transition: 0.2s all ease-in-out 0s;
+        &:hover{
+            color: #C29441;
+        }
+    }
+}
+
+.slick-carousel {
+  margin: 40px auto;
+
+  .slick-slide {
+    img {
+      width: 100%;
+    }
+
+    > div {
+      padding: 0 10px;
+    }
+  }
+}

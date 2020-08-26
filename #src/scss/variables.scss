@@ -1,0 +1,42 @@
+$font-stack:'Roboto',
+sans-serif;
+$link-fontSize:18px;
+
+$h2-fontSize: 30px;
+
+$tablet: 990px;
+$mobile: 768px;
+
+//Fonts-Stack
+$font-stack:'Roboto',
+sans-serif;
+
+//Font-Size
+$h1__fontSize:40px;
+$h2__fontSize: 30px;
+$h3__fontSize:24px;
+$link__fontSize:18px;
+$button__fontSize:18px;
+$p__fontSize:16px;
+$span__fontSize:16px;
+
+//sectionPadding
+$sectionPadding:2% 60px;
+//svg
+$svg__hover:#C29441;
+
+// Extend
+%h2__styles{
+	text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+%subtitle__styles{
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+

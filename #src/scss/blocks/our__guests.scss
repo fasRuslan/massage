@@ -1,0 +1,22 @@
+.guests{
+	background-color: black;
+	padding:$sectionPadding;
+	.guests__title{
+		@extend %h2__styles;
+		font-size:$h2__fontSize;
+		color: white;
+		margin-bottom: 20px;
+	}
+	.guests__subtitle{
+		@extend %subtitle__styles;
+		color: white;
+		margin-bottom: 20px;
+	}
+	.slider-item{
+		width: 90%;
+		height: 600px;
+	}
+	.services-card__photo{
+		width: 100%;
+	}
+}

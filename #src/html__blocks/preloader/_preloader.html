@@ -1,0 +1,185 @@
+<!-- Main preloader -->
+<style>
+	.main-prelader-wrapper.active {
+		display: block;
+		overflow: hidden;
+		color: #32383F;
+		font-family: 'Geometria', sans-serif;
+	}
+
+	.main-prelader-wrapper {
+		padding: 3% 3% 3% 3%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: none;
+		z-index: 999999;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		text-align: center;
+	}
+
+	.main-prelader {
+		position: absolute;
+		top: calc(50% - 52px);
+		left: 0;
+		width: 100%;
+		height: 64px;
+	}
+
+	.prelader__percent {
+		font-size: 40px;
+		font-family: "Geometria", sans-serif;
+		text-align: center;
+	}
+
+	.prelader__text {
+		margin-top: 7px;
+		color: #32383F;
+		font-size: 14px;
+	}
+
+	.prelader__progress {
+		position: absolute;
+		top: calc(50% + 10px);
+		display: none;
+		width: 0;
+		height: 2px;
+		background-color: #32383F;
+	}
+
+	.percent-count {
+		text-align: center;
+	}
+</style>
+<div class="main-prelader-wrapper js__main-prelader-wrapper active" id="mainPreloader" data-duration="1500"
+	data-preloader-hiding-point="0.7">
+	<img src="img/preloader/preloader.png" style="margin-top:30%; display: block; margin: 0 auto;">
+	<div class="main-prelader">
+		<div id="preladerPercent" class="prelader__percent"><span id="percentCount" class="percent-count">0</span>%
+		</div>
+	</div>
+	<div id="preladerProgress" class="prelader__progress"></div>
+</div>
+
+<script>
+	var preloader = document.getElementById('mainPreloader');
+
+	preloader.classList.add('active');
+
+	window.onload = function () {
+		hidePreloader(preloader);
+	};
+
+	// Helpers
+    /**
+     * @param {HTMLElement} preloader - the preloader block
+     */
+	function hidePreloader(preloader) {
+		var percentBlock = preloader.querySelector('#percentCount');
+		var progressBar = preloader.querySelector('#preladerProgress');
+		var duration = preloader.getAttribute('data-duration');
+		var isHidePreloaderAnimationActivate = false;
+		var hidingPoint = preloader.getAttribute('data-preloader-hiding-point');
+		var percent;
+
+		// Show progress bar only when page loads
+		progressBar.style.display = 'block';
+
+        /*animate({
+            duration: duration,
+            timing: timing,
+            draw: drawAnimatePreloader
+        });*/
+		animate(+duration, timing, drawAnimatePreloader);
+
+
+        /**
+         * Helpers hidePreloader function
+         */
+		function drawAnimatePreloader(progress) {
+			percent = Math.round(progress * 100);
+
+			// Transformations
+			percentBlock.innerHTML = String(percent);
+			progressBar.style.width = percent + '%';
+			progressBar.style.left = 'calc(50% - ' + percent / 2 + '%)';
+			// !Transformations
+
+			// Animate hiding the preloader
+			if (progress >= hidingPoint && !isHidePreloaderAnimationActivate) {
+				isHidePreloaderAnimationActivate = true;
+
+				animate(duration - (duration * hidingPoint), timing, drawHidePreloader);
+			}
+			// !Animate hiding the preloader
+
+
+            /**
+             * Helpers drawAnimatePreloader
+             */
+			function drawHidePreloader(progressHide) {
+				preloader.style.opacity = String(1 - progressHide);
+
+				if (progressHide >= 1) {
+					preloader.classList.remove('active');
+				}
+			}
+            /**
+             * !Helpers drawAnimatePreloader
+             */
+		}
+        /**
+         * !Helpers hidePreloader function
+         */
+
+
+        /**
+         * Animate the preloader
+         * @param {number} duration - animation duration
+         * @param {function} timing - timing function. Default: linear
+         * @param {function} draw - all animation will be here
+         */
+		function animate(duration, timing, draw) {
+			// Time since loading page
+			var start = performance.now();
+			// var start = Date.now();
+
+
+            /**
+             * Function for browser can optimized animations
+             * As long as "timeFraction" is less than 1, the function will be called again
+             *
+             * @param {function} callback
+             */
+			requestAnimationFrame(function animate(time) {
+				var timeFraction = (time - start) / duration;
+
+				if (timeFraction < 0) {
+					timeFraction = 0;
+				}
+
+				if (timeFraction > 1) {
+					timeFraction = 1;
+				}
+
+				var progress = timing(timeFraction);
+
+				draw(progress);
+
+				if (timeFraction < 1) {
+					requestAnimationFrame(animate);
+				}
+			});
+		}
+        /**
+         * !Animate the preloader
+         */
+
+		function timing(timeFraction) {
+			return timeFraction;
+		}
+	}
+</script>
+<!-- !Main preloader -->

@@ -1,0 +1,99 @@
+.header {
+  background-image: url(../../img/fone/general1.png);
+  background-color: #F9FCF1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding: 2% 2% 2% 2%;
+  position: relative;
+  overflow: hidden;
+
+  .header__menu {
+    .menu__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .tel-item__link {
+      font-size: $link__fontSize;
+      color: black;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  .menu__item {
+    margin-bottom: 20px;
+  }
+
+  .social__list--flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-menu__trait {
+    width: 10px;
+    height: 2px;
+  }
+
+  .general__logo {
+    display: block;
+    margin: 0 auto;
+
+    @media screen and (max-width: $mobile){
+      max-width: 100%;
+    }
+  }
+
+  .general__logo-block {
+    position: relative;
+  }
+
+  .general__button {
+    padding: 15px 20px;
+    font-size: $button__fontSize;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #242424;
+    display: block;
+    margin: 0 auto;
+    color: white;
+
+    transition: all 1s ease;
+
+    position: absolute;
+    top: 74%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+
+    &:hover {
+      color: #8B6B32;
+
+    }
+  }
+
+  .general__stones-right {
+    position: absolute;
+    top: 84%;
+    left: 93%;
+    z-index: 10;
+  }
+
+  .general__stone-left {
+    position: absolute;
+    top: 63%;
+    left: 0;
+    z-index: 10;
+  }
+
+  .general__leaves-top {
+    position: absolute;
+    top: -4%;
+    left: 53%;
+    z-index: 10;
+  }
+}

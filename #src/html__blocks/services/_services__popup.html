@@ -1,0 +1,30 @@
+<div class="popup" id="services__popup-services">
+	<div class="popup__body">
+		<div class="popup__content services__popup__content">
+			<a href class="popup__close form__services-popup__close">&times;</a>
+			<div class="popup__text">
+				<form action="mail.php" method="POST" class="services__popup-services__form form-services">
+					<div class="form-services__title js__form-services__title">
+						Позвонить
+					</div>
+					<div class="form-services__subject">
+						<input class="js__form-services__subject" name="form_subject" value="" type="hidden">
+					</div>
+					<ul class="form-services__form-list">
+						<li class="form-services__form-item">
+							<input required="" name="name" placeholder="Введите имя:" aria-required="true" type="text"
+								class="form-item__input form-name">
+						</li>
+						<li class="form-services__form-item form-phone">
+							<input required="" name="phone" placeholder="Введите телефон:" aria-required="true"
+								type="tel" class="form-item__input form-phone">
+						</li>
+						<li class="form__item form__item--btn">
+							<input type="submit" class="form-services__btn" value="ОСТАВИТЬ ЗАЯВКУ">
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

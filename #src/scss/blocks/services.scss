@@ -1,0 +1,97 @@
+.services {
+  background-color: #1F1F1F;
+  padding: 60px 2%;
+
+  @media screen and (max-width: $tablet){
+    padding: 60px 40px;
+  }
+
+  @media screen and (max-width: $mobile){
+    padding: 40px 15px;
+  }
+
+  .services__title {
+    font-size: $h2-fontSize;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 3%;
+  }
+
+  .services__list {
+    color: white;
+
+    &--flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: $mobile){
+        justify-content: center;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .services__item {
+    margin-bottom: 10%;
+    flex-basis: 30%;
+    text-align: center;
+
+    @media screen and (max-width: $mobile) {
+      padding: 0 20px;
+    }
+  }
+
+  .services-card__photo {
+    margin-bottom: 10%;
+    max-width: 260px;
+  }
+
+  .services-card {
+    text-align: center;
+  }
+
+  .services-card__title {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8%;
+    text-align: center;
+    line-height: 130%;
+  }
+
+  .services-card__subtitel {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .services-card__price {
+    font-size: 16px;
+    margin-bottom: 13%;
+    font-size: 16px;
+    color: #C29441;
+    font-weight: bold;
+  }
+
+  .services-card__link {
+    border: 1px solid #C29441;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #C29441;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out 0s;
+
+    &:hover {
+      background-color: #C29441;
+      color: white;
+    }
+  }
+
+}

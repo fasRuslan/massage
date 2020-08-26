@@ -1,0 +1,9 @@
+.svg__icon{
+	width: 26px;
+	height: 26px;
+	fill:black;
+	transition: all .4s ease 0s;
+	&:hover{
+		fill:#C29441;
+	}
+}

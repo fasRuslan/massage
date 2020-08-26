@@ -1,0 +1,166 @@
+.footer {
+  padding: 4% 2% 2% 2%;
+  background-color: #313131;
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+
+  .flex--block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer__map {
+    position: relative;
+    margin-right: 40px;
+
+    iframe {
+      @media screen and (max-width: $tablet) {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer__name-description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #6F6F6F;
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+  }
+
+  .footer__contacts {
+    width: 45%;
+
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+
+  .contacts__title {
+    font-family: Cormorant Garamond;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  .footer__tel {}
+
+  .contacts__tel-list {
+    margin-bottom: 20px;
+  }
+
+  .contacts__tel-item {}
+
+  .tel-title {}
+
+  .tel-title__name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 5%;
+  }
+
+  .tel-item {
+    margin-bottom: 20px;
+  }
+
+  .tel-item__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #C29441;
+  }
+
+  .footer__mail {}
+
+  .contacts__mail-list {
+    margin-bottom: 20px;
+  }
+
+  .contacts__mail-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .mail-item {}
+
+  .mail-item__icon {}
+
+  .mail-item__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+
+  .footer__social {}
+
+  .footer__social-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .footer__social-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .social__contacts-item {
+    margin-right: 5%;
+  }
+
+  .footer__adress {
+    margin-bottom: 7%;
+  }
+
+
+  .footer__adress-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 1%;
+  }
+
+  .footer__adress-schedule {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(217, 217, 217, 0.8);
+    line-height: 150%;
+  }
+
+  .footer__adress-adress {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(217, 217, 217, 0.8);
+    line-height: 150%;
+  }
+}

@@ -1,0 +1,136 @@
+.popup__sertificate-content{
+	background-color: #FFFBF3;
+	padding: 50px; 
+	border-radius: 10px;
+	@media screen and (max-width: $tablet){
+		padding: 60px 40px;
+		max-width: 700px;
+	  }
+	
+	  @media screen and (max-width: $mobile){
+		padding: 40px 15px;
+		max-width: 300px;
+	  }
+	.popup__sertificate-close{
+		color: white; 
+		display: block; 
+		background-color: #C69B4D;
+		border-radius: 50%;
+		padding: 10px 13px; 
+		position: absolute; 
+		right: -20px;
+		top: -13px;
+		@media screen and (max-width:$mobile) {
+			position: absolute;
+    		right: 2%;
+    		top: 3px;
+		}
+	}
+	.certificate__link{
+		width: 500px; 
+		display: block; 
+		display: flex;
+		flex-direction: column; 
+		align-items: flex-start;
+		@media screen and (max-width: $tablet){
+			padding: 60px 40px;
+			width: 400px;
+		  }
+		@media screen and (max-width: $mobile){
+			padding: 40px 15px;
+			max-width: 250px;
+		  }
+	}
+	.certificate__item-description{
+		margin-bottom: 10%;
+	}
+	.item-description__final-price{
+		text-align: left;
+	}
+	.form__certificate-action-input{
+		padding: 15px 20px;
+		margin-bottom: 4%;
+		border-radius: 20px;
+		font-size: 20px;
+		border: 1px solid black;
+		@media screen and (max-width: $mobile){
+			padding: 5px 10px;
+			font-size: 16px;
+		}
+	}
+	.general__submit{
+		padding: 15px 20px; 
+		font-size: 18px; 
+		text-align: center;
+		text-transform: uppercase; 
+		background-color: #242424; 
+		display: block;
+		margin: 0 auto;
+		color: white;
+		-webkit-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		 transition: all 1s ease; 
+		 cursor:pointer;
+	}
+	.certificate-first-link__description{
+		.certificate-first-link__description {
+		}
+		.description__popup-sertificate {
+		}
+		.certificate-link-title {
+			font-weight: 900;
+			font-size: 30px;
+			line-height: 28px;
+			letter-spacing: 0.01em;
+			color: #313131;
+			margin-bottom: 5%;
+		}
+		.span__sertificate-form{
+			font-family: 'Roboto',sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 16px;
+			color: #6F6F6F;
+			display: block;
+			text-align: left;
+			margin-bottom: 2%;
+	
+		}
+		.p__sertificate-form{
+			font-style: normal;
+			font-weight: 500;
+			font-size: 26px;
+			line-height: 21px;
+			color: #313131;
+			text-align: left;
+	
+		}
+		.popup__sertificate-included {
+			margin-bottom: 8%;
+		}
+		.popup__sertificate-included-title {
+		}
+		.popup__sertificate-included-subtitle {
+		}
+		.popup__sertificate-duration {
+			margin-bottom: 8%;
+		}
+		.popup__sertificate-duration-title {
+		}
+		.popup__sertificate-duration-subtitle {
+		}
+		.popup__sertificate-using {
+			margin-bottom: 8%;
+		}
+		.popup__sertificate-using-title {
+		}
+		.popup__sertificate-using-subtitle {
+		}
+		}
+		.general__submit {
+		}
+		.button {
+		}
+	}
+

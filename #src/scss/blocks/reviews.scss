@@ -1,0 +1,55 @@
+.reviews{
+  padding: 60px 2%;
+  background-color: #313131;
+
+  @media screen and (max-width: $tablet){
+    padding: 60px 40px;
+  }
+
+  @media screen and (max-width: $mobile){
+    padding: 40px 15px;
+  }
+
+  .slider{
+    height: 400px;
+  }
+  .reviews__title{
+    font-family: Cormorant Garamond;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .slider-item{
+    width: 90%;
+    height: 400px;
+    margin: 0 10px;
+    background-color: white;
+  }
+  .reviews__img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+
+    &--first{
+      background-image: url( '../img/rewiews/1.jpg');
+    }
+    &--second{
+      background-image: url( '../img/rewiews/2.jpg');
+    }
+    &--third{
+      background-image: url( '../img/rewiews/3.jpg');
+    }
+    &--fourth{
+      background-image: url( '../img/rewiews/4.jpg');
+    }
+    &--fifth{
+      background-image: url( '../img/rewiews/5.jpg');
+    }
+  }
+}
