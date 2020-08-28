@@ -1604,7 +1604,36 @@ textarea#newoptions {
 }
 
 .guests .services-card__photo {
-  width: 100%;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.guests .guests__img--theme {
+  background-image: url(../img/guests/our__guest/fone.jpeg);
+}
+
+.guests .guests__img--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.guests .guest__img-description {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
 }
 
 .svg__icon {

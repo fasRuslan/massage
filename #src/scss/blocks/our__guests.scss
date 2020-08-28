@@ -17,6 +17,25 @@
 		height: 600px;
 	}
 	.services-card__photo{
-		width: 100%;
+		width: 70%;
+		display: block;
+		margin: 0 auto;
+	}
+	.guests__img--theme{
+		background-image:url(../img/guests/our__guest/fone.jpeg);
+	}
+	.guests__img--flex{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.guest__img-description{
+		margin: 0 auto;
+		text-align: center;
+		font-size: 18px;
+		color: white;
+		font-weight: bold;
 	}
 }

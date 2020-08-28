@@ -13,7 +13,7 @@ let path = {
 		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"], //Все файлы кроме файлов которые начинаются с символа подчеркивание 
 		css: source_folder + "/scss/style.scss", //Папка со стилями
 		js: source_folder + "/js/script.js",
-		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}", //Две звездочки означает что мы будем слушать все папки в папке img, одна звездочка и точка смотрим расширения которые мы будем слушать
+		img: source_folder + "/img/**/*.{jpeg,jpg,png,svg,gif,ico,webp}", //Две звездочки означает что мы будем слушать все папки в папке img, одна звездочка и точка смотрим расширения которые мы будем слушать
 		fonts: source_folder + "/fonts/*.ttf", //интересуют файлы в папке fonts с расширением ttf
 	},
 	watch: {
